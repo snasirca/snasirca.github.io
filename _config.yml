@@ -34,7 +34,7 @@ kramdown:
 #
 owner:
   name: Shahriyar Nasir
-  avatar: shahriyar-nasir-profile-picture.jpg
+  avatar: profile-picture.jpg
   job: "Full Stack Software Engineer"
   bio: "Software Engineer @Nulogy • Empath • Innovator • Collaborator"
   email: contact@snasir.ca
@@ -54,7 +54,7 @@ owner:
   xing:
   instagram:
   lastfm:
-  tumblr:
+  tumblr: snasirca
   pinterest:
   foursquare:
   steam:
@@ -65,3 +65,7 @@ owner:
   flickr:
   codepen:
   telegram:
+  angellist: snasirca
+  meetup: 89337752
+  medium: ShahriyarNasir
+  goodreads: 62723093-shahriyar
