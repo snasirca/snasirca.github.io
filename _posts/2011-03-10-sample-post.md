@@ -1,13 +1,18 @@
 ---
 layout: post
 title: Sample Post
-excerpt: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
-categories: [hello world]
+excerpt: >-
+  Just about everything you'll need to style in the theme: headings, paragraphs,
+  blockquotes, tables, code blocks, and more.
+categories:
+  - hello world
 comments: true
 image:
-  feature: https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=475&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1250
+  feature: >-
+    https://images.unsplash.com/photo-1440635592348-167b1b30296f?crop=entropy&dpr=2&fit=crop&fm=jpg&h=475&ixjsv=2.1.0&ixlib=rb-0.3.5&q=50&w=1250
   credit: thomas shellberg
-  creditlink: https://unsplash.com/photos/Ki0dpxd3LGc
+  creditlink: 'https://unsplash.com/photos/Ki0dpxd3LGc'
+published: true
 ---
 
 ## HTML Elements
@@ -70,13 +75,13 @@ HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, c
 
 ## Code Snippets
 
-{% highlight css %}
+```css
 #container {
   float: left;
   margin: 0 -240px 0 0;
   width: 100%;
 }
-{% endhighlight %}
+```
 
 ## Buttons
 
