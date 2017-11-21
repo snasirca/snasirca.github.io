@@ -3,22 +3,22 @@
 # Site wide configuration
 ####################################
 #
-title: Leonids
-email: zourenyuan@gmail.com
-description: A simple and awesome blog theme powered by jekyll.
-url: https://renyuanz.github.io/leonids # the base hostname & protocol for your site
-keywords: ["Programming", "PHP", "Ruby"]
+title: Shahriyar Nasir
+email: contact@snasir.ca
+description: Personal website of Shahriyar Nasir
+url: http://snasir.ca # the base hostname & protocol for your site
+keywords: ["Software", "Programming", "Ruby", "Rails"]
 
 #
 ###################################
 # Jekyll configuration
 ####################################
 #
-timezone:          Europe/Paris
+timezone:          America/Toronto
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /articles/:year-:month/:title
+permalink:         /articles/:year-:month-:day/:title
 
 kramdown:
   auto_ids: true
@@ -33,35 +33,35 @@ kramdown:
 ####################################
 #
 owner:
-  name: Leonids
-  avatar: leonids-logo.png
-  job: "PHP & Ruby Developer"
-  bio: "A backend developer who loves design awesome things. Working for RendezvousCheznous atm in Marseille, France."
-  email: zourenyuan@gmail.com
-  disqus-shortname: renyuanzblog
-  twitter: renyuan814 #username
-  facebook: #username
+  name: Shahriyar Nasir
+  avatar: shahriyar-nasir-profile-picture.jpg
+  job: "Full Stack Software Engineer"
+  bio: "Software Engineer @Nulogy • Empath • Innovator • Collaborator"
+  email: contact@snasir.ca
+  disqus-shortname: 
+  twitter: ShahriyarNasir
+  facebook:
   google:
-    plus: #username
+    plus:
     analytics: UA-62251910-2
     verify:
     ad-client:
     ad-slot:
   bing-verify:
-  github: renyuanz #username
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: renyuan-zou-69b7038a #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
-  telegram: #username
+  github: snasirca
+  stackoverflow: 998598/snasirca
+  linkedin: shahriyar
+  xing:
+  instagram:
+  lastfm:
+  tumblr:
+  pinterest:
+  foursquare:
+  steam:
+  dribbble:
+  youtube:
+  soundcloud:
+  weibo:
+  flickr:
+  codepen:
+  telegram:
