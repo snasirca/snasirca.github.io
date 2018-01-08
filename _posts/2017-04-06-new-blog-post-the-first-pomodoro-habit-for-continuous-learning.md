@@ -16,8 +16,6 @@ I just published a blog post documenting my team's journey towards developing a 
 After some team restructuring, we feared career stagnation. Read on to find out how we overcame them to become highly 
 innovative and engaged. 
 
-Its an 8 minute read.
-
 Click [here] to read on.
 
 [here]: https://medium.com/nulogy/the-first-pomodoro-habit-for-continuous-learning-e3cfa2e2451d
