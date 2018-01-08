@@ -2,7 +2,7 @@
 layout: post
 title: "Dynamically Center Horizontally and Vertically using CSS3 Flexbox"
 date: 2013-08-05 02:47:00 
-categories: [ux]
+categories: [UX]
 tags: css3 flexbox
 comments: true
 ---

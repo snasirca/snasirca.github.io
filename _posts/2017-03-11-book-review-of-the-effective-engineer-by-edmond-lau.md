@@ -2,7 +2,7 @@
 layout: post
 title: "Book Review of The Effective Engineer by Edmond Lau"
 date: 2017-03-11 13:08:00 
-categories: [productivity]
+categories: [Effectiveness]
 tags: automation book-review leverage
 comments: true
 ---
