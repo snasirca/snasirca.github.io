@@ -3,6 +3,7 @@ layout: post
 title:  "If You Are Ignoring Hardware, You're Living Under a Rock"
 date:   2012-11-19 18:05:00 
 categories: [hardware]
+tags: hardware innovation microcontroller
 comments: true
 ---
 
