@@ -3,6 +3,7 @@ layout: post
 title: "Planning Poker Tool"
 date: 2013-02-19 19:54:00 
 categories: [agile]
+tags: estimation planning-poker
 comments: true
 ---
 
