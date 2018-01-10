@@ -18,7 +18,7 @@ timezone:          America/Toronto
 markdown:          kramdown
 highlighter:       rouge
 excerpt_separator: <!--more-->
-permalink:         /posts/:year/:month/:day/:title
+permalink:         /posts/:year/:month/:day/:title/
 plugins:
   - jekyll-sitemap
 
@@ -40,7 +40,7 @@ owner:
   job: "Software Engineer"
   bio: "Full Stack Web Developer @Nulogy • Empath • Innovator • Collaborator"
   email: contact@snasir.ca
-  disqus-shortname:
+  disqus-shortname: snasirca
   twitter: ShahriyarNasir
   facebook:
   google:
