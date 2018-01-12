@@ -5,6 +5,7 @@ date: 2017-03-11 13:08:00
 categories: [Effectiveness]
 tags: automation book-review leverage
 comments: true
+mathjax: true
 ---
 
 [The Effective Engineer] is a must read for anyone in software development. The author, [Edmond Lau], draws on his 
@@ -19,7 +20,7 @@ disproportionate impact.
 
 Lau defines **leverage** as:
 
-\[latexpage\] \\\[ \\textrm{Leverage} = \\frac{\\textrm{Impact Produced}}{\\textrm{Time Invested}} \\\]
+$$ \textrm{Leverage} = \frac{\textrm{Impact Produced}}{\textrm{Time Invested}} $$
 
 This concept is exciting to me since I am always on the lookout for ways to increase my leverage and build things with 
 lasting value. I want to spend less time but have a greater impact. There are so many valuable strategies in this book 
