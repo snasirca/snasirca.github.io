@@ -1,4 +1,9 @@
+- name: mikado-graph-generator
+  description: Provides a simple DSL for generating Mikado Graphs using GraphViz.
+  github: https://github.com/snasirca/mikado-graph-generator
 - name: kdiff
-  description: Simple O(n) diffing library 
-  image: pong.png
+  description: Simple O(n) diffing library.
   github: https://github.com/snasirca/kdiff
+- name: node-acceptance-testing-sample
+  description: A sample project for using NodeJS, WebdriverIO, Chromedriver to write browser based acceptance tests
+  github: https://github.com/snasirca/node-acceptance-testing-sample
