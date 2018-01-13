@@ -2,7 +2,7 @@
   description: Provides a simple DSL for generating Mikado Graphs using GraphViz.
   github: https://github.com/snasirca/mikado-graph-generator
 - name: kdiff
-  description: Simple O(n) diffing library.
+  description: Simple O(n) diffing library written in Kotlin and Gradle Kotlin DSL.
   github: https://github.com/snasirca/kdiff
 - name: node-acceptance-testing-sample
   description: A sample project for using NodeJS, WebdriverIO, Chromedriver to write browser based acceptance tests
