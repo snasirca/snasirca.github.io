@@ -2,7 +2,7 @@
 layout: post
 title: "Execute PowerShell Inline in Sublime Text 2"
 date: 2013-02-09 20:58:00 
-categories: [Utilities]
+categories: [Plugins]
 tags: powershell sublime-text-2
 comments: true
 ---
