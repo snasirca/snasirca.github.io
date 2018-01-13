@@ -36,7 +36,7 @@ kramdown:
 #
 owner:
   name: Shahriyar Nasir
-  avatar: profile-picture.jpg
+  avatar:
   job: "Software Engineer"
   bio: "Full Stack Web Developer @Nulogy • Empath • Innovator • Collaborator"
   email: contact@snasir.ca
