@@ -22,7 +22,7 @@ remote. Here is what I did.
 I whipped up a small PHP script to tackle this issue so that we didn't have to rearrange our meeting to be in person. 
 You can find it here at:
 
-[planning-poker-app.snasir.ca](http://planning-poker-app.snasir.ca)
+[planning-poker-tool.snasir.ca](http://planning-poker-tool.snasir.ca)
 
 Maybe this can help out another team looking for a quick way to perform planning poker without any signups or 
 registration. Here is what it looks like:
