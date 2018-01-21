@@ -24,6 +24,10 @@ You can find it here at:
 
 [planning-poker.snasir.ca](http://planning-poker.snasir.ca)
 
+(2018-01-21) **Update!** I've migrated from my shared hosting company to AWS Lambda and Serverless to save costs. The 
+backend of the tool has been migrated from PHP to ExpressJS. It is deployed to AWS Lambda and API Gateway using
+[serverless].
+
 Maybe this can help out another team looking for a quick way to perform planning poker without any signups or 
 registration. Here is what it looks like:
 
@@ -35,3 +39,4 @@ registration. Here is what it looks like:
 [Wideband Delphi]: http://en.wikipedia.org/wiki/Wideband_Delphi
 [Agile software development]: http://en.wikipedia.org/wiki/Agile_software_development
 [Extreme Programming]: http://en.wikipedia.org/wiki/Extreme_Programming
+[serverless]: http://serverless.com
