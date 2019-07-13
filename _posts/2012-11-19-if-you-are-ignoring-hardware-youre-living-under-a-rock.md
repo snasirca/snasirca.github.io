@@ -70,9 +70,9 @@ desire for innovation, get yourself a microcontroller or an FPGA and build somet
 of the greatest black-boxes, computer hardware. And you will bring together components for a living, breathing,
 machine---to run your software on :D.
 
-[MIPS]: http://en.wikipedia.org/wiki/MIPS_architecture
-[Microcontroller]: http://en.wikipedia.org/wiki/Microcontroller
-[Verilog]: http://en.wikipedia.org/wiki/Verilog
-[FPGA]: http://en.wikipedia.org/wiki/Field-programmable_gate_array 
+[MIPS]: https://en.wikipedia.org/wiki/MIPS_architecture
+[Microcontroller]: https://en.wikipedia.org/wiki/Microcontroller
+[Verilog]: https://en.wikipedia.org/wiki/Verilog
+[FPGA]: https://en.wikipedia.org/wiki/Field-programmable_gate_array 
 [DE2]: https://www.altera.com/solutions/partners/partner-profile/terasic-inc-/board/altera-de2-115-development-and-education-board.html
 [video]: https://www.youtube.com/watch?v=VSVQAATxdro 

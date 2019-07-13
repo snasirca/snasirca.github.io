@@ -6,7 +6,7 @@
 title: Shahriyar Nasir's Personal Blog
 email: contact@snasir.ca
 description: Shahriyar Nasir blogs about software, hardware, and technology
-url: http://snasir.ca # the base hostname & protocol for your site
+url: https://snasir.ca # the base hostname & protocol for your site
 keywords: ["Software", "Engineering", "Programming", "Code", "Ruby", "Rails"]
 
 #

@@ -68,7 +68,7 @@ Becomes:
 
 Let me know what you think!
 
-[Sublime Text 2]: http://www.sublimetext.com/
-[CSC401H1 Natural Language Computing]: http://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC401H1
-[PowerShell]: http://en.wikipedia.org/wiki/Windows_PowerShell
-[TextMate is able to pipe commands]: http://manual.macromates.com/en/shell_commands
+[Sublime Text 2]: https://www.sublimetext.com/
+[CSC401H1 Natural Language Computing]: https://www.artsandscience.utoronto.ca/ofr/calendar/crs_csc.htm#CSC401H1
+[PowerShell]: https://en.wikipedia.org/wiki/Windows_PowerShell
+[TextMate is able to pipe commands]: https://manual.macromates.com/en/shell_commands

@@ -52,4 +52,4 @@ $(function () {
 });
 ```
 
-You can also view this in action here: <http://jsfiddle.net/6ZTRZ/3/>
+You can also view this in action here: <https://jsfiddle.net/6ZTRZ/3/>

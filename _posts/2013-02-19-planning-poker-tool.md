@@ -22,7 +22,7 @@ remote. Here is what I did.
 I whipped up a small PHP script to tackle this issue so that we didn't have to rearrange our meeting to be in person. 
 You can find it here at:
 
-[planning-poker.snasir.ca](http://planning-poker.snasir.ca)
+[planning-poker.snasir.ca](https://planning-poker.snasir.ca)
 
 (2018-01-21) **Update!** I've migrated from my shared hosting company to AWS Lambda and Serverless to save costs. The 
 backend of the tool has been migrated from PHP to ExpressJS. It is deployed to AWS Lambda and API Gateway using
@@ -34,9 +34,9 @@ registration. Here is what it looks like:
 ![A preview of my planning poker tool.](/img/posts/planning-poker-preview.jpg)
 *A preview of my planning poker tool.*
 
-[Planning Poker]: http://en.wikipedia.org/wiki/Planning_poker
-[User Story]: http://en.wikipedia.org/wiki/User_story
-[Wideband Delphi]: http://en.wikipedia.org/wiki/Wideband_Delphi
-[Agile software development]: http://en.wikipedia.org/wiki/Agile_software_development
-[Extreme Programming]: http://en.wikipedia.org/wiki/Extreme_Programming
-[serverless]: http://serverless.com
+[Planning Poker]: https://en.wikipedia.org/wiki/Planning_poker
+[User Story]: https://en.wikipedia.org/wiki/User_story
+[Wideband Delphi]: https://en.wikipedia.org/wiki/Wideband_Delphi
+[Agile software development]: https://en.wikipedia.org/wiki/Agile_software_development
+[Extreme Programming]: https://en.wikipedia.org/wiki/Extreme_Programming
+[serverless]: https://serverless.com
