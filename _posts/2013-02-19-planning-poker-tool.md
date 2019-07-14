@@ -22,7 +22,7 @@ remote. Here is what I did.
 I whipped up a small PHP script to tackle this issue so that we didn't have to rearrange our meeting to be in person. 
 You can find it here at:
 
-[planning-poker.snasir.ca](https://planning-poker.snasir.ca)
+[planning-poker.snasir.ca](http://planning-poker.snasir.ca)
 
 (2018-01-21) **Update!** I've migrated from my shared hosting company to AWS Lambda and Serverless to save costs. The 
 backend of the tool has been migrated from PHP to ExpressJS. It is deployed to AWS Lambda and API Gateway using
