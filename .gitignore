@@ -6,3 +6,5 @@ _drafts
 .DS_store
 .idea/
 tmp/
+.terraform
+.env
