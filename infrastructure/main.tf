@@ -23,6 +23,14 @@ resource "aws_acm_certificate" "cert" {
   validation_method = "DNS"
 }
 
+resource "aws_route53_record" "www" {
+  name = "www.${var.domain_name}"
+  type = "CNAME"
+  zone_id = data.aws_route53_zone.zone.id
+  records = [var.domain_name]
+  ttl = 3600
+}
+
 resource "aws_route53_record" "cert_validation" {
   name = aws_acm_certificate.cert.domain_validation_options[0].resource_record_name
   type = aws_acm_certificate.cert.domain_validation_options[0].resource_record_type
