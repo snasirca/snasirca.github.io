@@ -78,7 +78,7 @@ resource "aws_cloudfront_distribution" "distribution" {
     viewer_protocol_policy = "redirect-to-https"
     min_ttl = 0
     default_ttl = 0
-    max_ttl = 31536000 # TODO: Change this to 0
+    max_ttl = 0
   }
 
   price_class = "PriceClass_All"
