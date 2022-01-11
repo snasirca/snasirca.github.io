@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shahriyar Nasir - Software Engineer</title>
+  <style>
+    body {
+      font-family: Helvetica, sans-serif;
+      /* 16px is 12pt */
+      font-size: 16px;
+    }
+
+    #main-container {
+      margin: 0 auto 0 auto;
+      width: 900px;
+    }
+
+    #headline-container {
+      display: flex;
+      margin-bottom: 8px;
+    }
+
+    #my-name-container {
+      width: 50%;
+    }
+
+    #my-name {
+      font-size: 40px;
+      font-variant: small-caps;
+      font-weight: bold;
+    }
+
+    #my-title-container {
+      width: 50%;
+      padding-top: 24px;
+      text-align: right;
+    }
+
+    .header-field-name {
+      font-weight: bold;
+    }
+
+    #contact-info-container {
+      font-size: 14px;
+      padding: 16px 0;
+      border-bottom: 1px solid lightgray;
+      border-top: 1px solid lightgray;
+      text-align: center;
+    }
+
+    .group-container {
+      border: 1px solid lightgray;
+      margin: 16px;
+      padding: 16px;
+    }
+
+    .group-heading-container {
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin: 12px 0;
+    }
+
+    #notable-skills {
+      margin-top: 16px;
+    }
+
+    .position {
+      text-align: justify;
+    }
+
+    ul {
+      margin-top: 0;
+    }
+
+    .position:last-child > ul {
+      margin-bottom: 0;
+    }
+
+    li {
+      padding-left: 8px;
+    }
+
+    .group-container > .position > ul {
+      padding-left: 18px;
+    }
+
+    .tabbed {
+      padding-left: 22px;
+    }
+
+    .highlight {
+      font-style: italic;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<div id="main-container">
+  <div id="headline-container">
+    <div id="my-name-container"><span id="my-name">Shahriyar Nasir</span></div>
+    <div id="my-title-container"><span>Staff Engineer / Sr. Software Engineer</span></div>
+  </div>
+  <div id="contact-info-container">
+    <div class="private">
+      <span class="header-field-name">Preferred Name:</span> Shah &nbsp;&#9642;&nbsp;
+      2355 Fifth Line West, Unit 33, Mississauga, Ontario, Canada,
+      L5K 2M8
+    </div>
+    <div>
+      <span class="private">(647) 407-6767 &nbsp;&#9642;&nbsp;</span>
+      <a
+          href="mailto:shahriyar.nasir@gmail.com">shahriyar.nasir@gmail.com</a> &nbsp;&#9642;&nbsp;
+      <a href="https://linkedin.com/in/shahriyar" target="_blank">linkedin.com/in/shahriyar</a>
+      &nbsp;&#9642;&nbsp;
+      <a href="https://snasir.ca" target="_blank">snasir.ca</a>
+    </div>
+  </div>
+
+  <div id="notable-skills">
+    <ul>
+      <li>8 years of TDD/DDD with Ruby on Rails, as well as React/Apollo/GraphQL/TypeScript, Terraform/AWS/Docker, Elasticsearch, Buildkite/CI/CD,
+        Blue-Green Deployments, and Progressive Delivery with LaunchDarkly
+      </li>
+      <li>8 years in an Agile XP team environment with daily pair programming and/or mob programming</li>
+      <li>4 years with C#, ASP.NET (WebForms, MVC), SQL Server, and Entity Framework</li>
+      <li>Engineering leader recognized for shaping team culture in order to:
+        <ul>
+          <li>Increase psychological safety</li>
+          <li>Reduce the 5 dysfunctions of a team</li>
+          <li>Accelerate innovation through engineering leverage</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <h2>Professional Experience</h2>
+
+  <div class="group-container">
+    <div class="group-heading-container">
+      <strong>Nulogy</strong>, Permanent Full-time, Jan 2014 - Nov 2021
+    </div>
+
+    <div class="position">
+      <strong>Staff Engineer</strong>, Jul 2020 - Nov 2021
+      <ul>
+        <li>
+          Co-led operationalization of the concepts of Value Demand, Failure Demand, and Engineering Improvements to streamline
+          departmental communication between leadership and teams. Increased <span class="highlight">feature delivery sustainability</span>
+          by enabling effective handling of investments into tech debt reduction and security issues.
+        </li>
+        <li>
+          Oversaw development of the flagship monolith by supporting multiple teams with project discovery,
+          architecting, technical design, and release planning. Teams were more aligned with the technical vision.
+          Issues surfaced by them could be quickly addressed through prioritization of the appropriate engineering improvements.
+        </li>
+        <li>
+          Devised a way to embed a kind of <span class="highlight">"micro-frontend"</span> architecture in the monolith
+          which allowed React + Apollo + GraphQL + TypeScript + <a href="https://nulogy.design/" target="_blank">Nulogy
+          Design System</a> to be used without massive rewrites of the app. The UI can now be modernized incrementally.
+        </li>
+        <li>
+          Leveraged Buildkite/Terraform/Terragrunt/AWS to steward multiple engineering improvements to the CI/CD pipeline.
+          For example, led the introduction of Incremental Deployments such as Linear/Canary. This reduced the risk of
+          negative impact for changes that cannot be feature-flagged such as an OS upgrade to the app containers.
+        </li>
+      </ul>
+    </div>
+
+    <div class="position">
+      <strong>Sr. Software Engineer / Tech Lead</strong>, May 2018 - Jun 2020
+      <ul>
+        <li>
+          Led a complex migration to add versioning to a 10-year-old core domain model called the Bill of Materials (<span class="highlight">BOM Versioning</span>).
+          Continuously increased safety in order to avoid incidents in this mission-critical component of the monolith.
+          Through this engineering challenge, led the team to become the highest performing at Nulogy. Project completed
+          with minimal quality issues. Customers saw immediate yearly savings of six figures.
+        </li>
+        <li>
+          Co-led the adoption of <span class="highlight">continuous delivery</span> in the flagship monolith. This
+          resulted in Nulogy becoming an Elite Performer according to the "Four Key Metrics" in DevOps&#8212;a many
+          orders of magnitude improvement. Savings were estimated to be $366k yearly after a less than 3-month ROI.
+        </li>
+        <li>
+          Received a <span class="highlight">Star Award</span>, the highest employee recognition, for leadership in
+          adopting continuous delivery. One of two Nulogites to ever receive this award twice.
+        </li>
+      </ul>
+    </div>
+
+    <div class="position">
+      <strong>Software Engineer</strong>, Jan 2014 - May 2018
+      <ul>
+        <li>
+          Co-led the adoption of a continuous learning habit on the team called
+          <a href="https://snasir.ca/posts/2017/04/06/medium-post-the-first-pomodoro-habit-for-continuous-learning/" target="_blank">
+            <span class="highlight">"First Pomodoro"</span></a>. This practice spawned organizational capabilities such as an
+          Incident Management process, and improved practices such as Domain Driven Design, and Lean Change Management.
+        </li>
+        <li>
+          Introduced the Elastic stack (ELK) in order to migrate a process of querying 300 GB of server logs using a SQL database to instead use Elasticsearch.
+          Improved query times from <span class="highlight">hours to milliseconds</span>. This increased productivity for many departments. The
+          Global Support team received the biggest productivity boost and were able to service customers more effectively.
+        </li>
+        <li>
+          Leveraged the Elastic stack to move the company more towards <span class="highlight">data-driven decisions</span>. Early successes included
+          building an enhanced report that was immediately adopted because the Elastic stack helped decide where to promote it in the
+          app.
+        </li>
+        <li>
+          Received a <span class="highlight">Star Award</span>, the highest employee recognition, for outstanding contribution through
+          <a href="https://snasir.ca/posts/2017/12/07/medium-post-be-the-psychological-safety-you-want-to-see-in-the-world/" target="_blank">
+            <span class="highlight">increasing psychological safety</span></a>, introducing the ELK stack,
+          promoting continuous learning, and community outreach.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="position">
+    <div class="tabbed">
+      <strong>Software Producer</strong>, Contract Full-time, Three Point Turn Inc., May 2013 - Aug 2013
+    </div>
+    <ul>
+      <li>Took the initiative to reduce a third-party manual deployment GUI built on Flex into a one-click publishing
+        scenario by spoofing all the web service calls of the steps necessary. Reduced cumulative daily deployment
+        times from tens of minutes to <em>seconds</em>.
+      </li>
+    </ul>
+  </div>
+
+  <div class="position">
+    <div class="tabbed">
+      <strong>Software Development Engineer</strong>, Co-op, CatMedis Healthcare Inc., Sep 2009 - Dec 2010, May 2011 -
+      Aug. 2011
+    </div>
+    <ul>
+      <li>Developed and documented a state-of-the-art incident reporting system named SafePoint&trade; in ASP.NET MVC 3
+        with
+        Entity Framework, SQL Server, jQuery, Workflow Foundation, and the latest HTML5 using Google Chrome Frame.
+        Deployed SafePoint&trade; to 3 hospital sites within the first year of it being live and the system averaged 10
+        incident reports per day.
+      </li>
+    </ul>
+  </div>
+
+  <div class="position">
+    <div class="tabbed">
+      <strong>.NET Developer</strong>, Co-op, University Health Network (SIMS), Jan 2009 - Apr 2009
+    </div>
+    <ul>
+      <li>Built a system of .NET (C# 3.5) and SQL Server enterprise applications (WinForms and WebForms) for auditing
+        UHN physicians' chart completion after patient discharge.
+      </li>
+    </ul>
+  </div>
+
+  <div class="position">
+    <div class="tabbed">
+      <strong>Systems Analyst</strong>, Co-op, GlaxoSmithKline Pharmaceuticals, May 2008 - Aug 2008
+    </div>
+    <ul>
+      <li>Carried out independent research and evaluated possible mobile device platforms to create an efficient way
+        for the Public Affairs &amp; Reimbursement division to send &quot;Thank You&quot; emails/letters. Developed
+        a solution using ASP.NET C# and Oracle SQL Developer.
+      </li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="tabbed">
+    <strong>BASc, Computer Science - Software Engineering Specialist</strong><br/>
+    University of Toronto, Toronto, Ontario, December 2013<br/>
+  </div>
+</div>
+</body>
+</html>
