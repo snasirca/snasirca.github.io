@@ -1,78 +1,86 @@
 provider "aws" {
-  region = "us-east-1"
-  profile = "personal"
+  region = var.aws_region
 }
-
-variable "domain_name" {}
 
 terraform {
   backend "s3" {
     bucket = "snasirca-terraform-remote-state-storage"
-    key = "snasirca.github.io/terraform.tfstate"
+    key    = "snasirca.github.io/terraform.tfstate"
     region = "us-east-1"
   }
 }
 
 data "aws_route53_zone" "zone" {
-  name = "${var.domain_name}."
+  name         = "${var.domain_name}."
   private_zone = false
 }
 
 resource "aws_acm_certificate" "cert" {
-  domain_name = var.domain_name
-  validation_method = "DNS"
+  domain_name               = var.domain_name
+  validation_method         = "DNS"
+  subject_alternative_names = ["*.${var.domain_name}"]
+
+  lifecycle {
+    create_before_destroy = true
+  }
 }
 
 resource "aws_route53_record" "www" {
-  name = "www.${var.domain_name}"
-  type = "CNAME"
+  name    = "www.${var.domain_name}"
+  type    = "CNAME"
   zone_id = data.aws_route53_zone.zone.id
   records = [var.domain_name]
-  ttl = 3600
+  ttl     = 3600
+}
+
+locals {
+  cert_validation_record_name  = tolist(aws_acm_certificate.cert.domain_validation_options)[0].resource_record_name
+  cert_validation_record_type  = tolist(aws_acm_certificate.cert.domain_validation_options)[0].resource_record_type
+  cert_validation_record_value = tolist(aws_acm_certificate.cert.domain_validation_options)[0].resource_record_value
 }
 
 resource "aws_route53_record" "cert_validation" {
-  name = aws_acm_certificate.cert.domain_validation_options[0].resource_record_name
-  type = aws_acm_certificate.cert.domain_validation_options[0].resource_record_type
+  name    = local.cert_validation_record_name
+  type    = local.cert_validation_record_type
   zone_id = data.aws_route53_zone.zone.id
-  records = [aws_acm_certificate.cert.domain_validation_options[0].resource_record_value]
-  ttl = 300
+  records = [local.cert_validation_record_value]
+  ttl     = 300
 }
 
 resource "aws_acm_certificate_validation" "cert_validation" {
-  certificate_arn = aws_acm_certificate.cert.arn
+  certificate_arn         = aws_acm_certificate.cert.arn
   validation_record_fqdns = [aws_route53_record.cert_validation.fqdn]
 }
 
 locals {
-  origin_domain_name = "snasirca.github.io"
-  origin_id = "Custom-${local.origin_domain_name}"
+  origin_domain_name = var.github_pages_domain
+  origin_id          = "Custom-${local.origin_domain_name}"
 }
 
 resource "aws_cloudfront_distribution" "distribution" {
   origin {
     domain_name = local.origin_domain_name
-    origin_id = local.origin_id
+    origin_id   = local.origin_id
 
     custom_origin_config {
-      http_port = 80
-      https_port = 443
+      http_port                = 80
+      https_port               = 443
       origin_keepalive_timeout = 5
-      origin_protocol_policy = "https-only"
-      origin_read_timeout = 30
-      origin_ssl_protocols = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+      origin_protocol_policy   = "https-only"
+      origin_read_timeout      = 30
+      origin_ssl_protocols     = ["TLSv1", "TLSv1.1", "TLSv1.2"]
     }
   }
 
-  enabled = true
-  is_ipv6_enabled = true
+  enabled             = true
+  is_ipv6_enabled     = true
   default_root_object = null
 
   aliases = [var.domain_name, "www.${var.domain_name}"]
 
   default_cache_behavior {
-    allowed_methods = ["GET", "HEAD", "OPTIONS"]
-    cached_methods = ["GET", "HEAD"]
+    allowed_methods  = ["GET", "HEAD", "OPTIONS"]
+    cached_methods   = ["GET", "HEAD"]
     target_origin_id = local.origin_id
 
     forwarded_values {
@@ -84,9 +92,9 @@ resource "aws_cloudfront_distribution" "distribution" {
     }
 
     viewer_protocol_policy = "redirect-to-https"
-    min_ttl = 0
-    default_ttl = 0
-    max_ttl = 0
+    min_ttl                = 0
+    default_ttl            = 0
+    max_ttl                = 0
   }
 
   price_class = "PriceClass_All"
@@ -98,21 +106,21 @@ resource "aws_cloudfront_distribution" "distribution" {
   }
 
   viewer_certificate {
-    acm_certificate_arn = aws_acm_certificate_validation.cert_validation.certificate_arn
+    acm_certificate_arn            = aws_acm_certificate_validation.cert_validation.certificate_arn
     cloudfront_default_certificate = false
-    minimum_protocol_version = "TLSv1.1_2016"
-    ssl_support_method = "sni-only"
+    minimum_protocol_version       = "TLSv1.1_2016"
+    ssl_support_method             = "sni-only"
   }
 }
 
 resource "aws_route53_record" "record" {
   zone_id = data.aws_route53_zone.zone.id
-  name = var.domain_name
-  type = "A"
+  name    = var.domain_name
+  type    = "A"
 
   alias {
-    name = aws_cloudfront_distribution.distribution.domain_name
-    zone_id = aws_cloudfront_distribution.distribution.hosted_zone_id
+    name                   = aws_cloudfront_distribution.distribution.domain_name
+    zone_id                = aws_cloudfront_distribution.distribution.hosted_zone_id
     evaluate_target_health = false
   }
 }
